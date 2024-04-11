@@ -17,8 +17,7 @@
   }
 
   .weather-card:hover {
-    transform: rotateY(10deg) rotateX(10deg) scale(1.05); /* Added scale effect for depth */
-}
+    transform: rotateY(10deg) rotateX(10deg) scale(1.05); 
 
   .weather-content {
     position: relative;
