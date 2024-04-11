@@ -1,0 +1,88 @@
+.hero-wrapper {
+    margin: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: #7544FC;
+    height: 50vh;
+  }
+
+  .hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .text {
+    font-size: 40px;
+    margin-bottom: 35px;
+  }
+
+  .hero-left p {
+    margin-left: 115px;
+    width: 60%;
+    color: #92C6A7;
+    text-align: left;
+  }
+
+  .hero-right {
+    position: relative;
+    width: 40%;
+    top: 8%;
+    margin-right: 10%;
+  }
+
+  .hero-logo {
+    width: 90%;
+    height: auto;
+    z-index: 100;
+    border-radius: 5px;
+  }
+
+
+  @media (max-width: 1024px) {
+    .hero-wrapper {
+        margin-top: -17px;
+        height: 30vh;
+    }
+    .text {
+        font-size: 25px;
+        margin-left: 5%;
+    }
+    .hero-right {
+        width: 45%;
+        top: -6%;
+        margin-right: 6%;
+    }
+    .hero-logo {
+        margin-top: 35px;
+
+    }
+    .hero-left p {
+      margin-left: 65px;
+    }
+
+  }
+
+  @media (max-width: 600px) {
+    .hero-wrapper {
+      margin-top: -20px;
+      flex-direction: column;
+      height: 50vh;
+    }
+    .text {
+        font-size: 30px;
+    }
+    .hero-right {
+        width: 100%;
+        top: -10%;
+        margin-right: 2%;
+    }
+    .hero-logo {
+        margin-top: 25px;
+        max-width: 100%;
+
+    }
+  }
