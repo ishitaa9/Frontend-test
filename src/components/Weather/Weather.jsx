@@ -1,4 +1,3 @@
-// Weather.js
 import React, { useState, useEffect } from 'react';
 import './Weather.css';
 import DaySunny from '../../weather/64x64/day/113.png';
@@ -46,10 +45,8 @@ function Weather() {
 
   const renderWeatherIcon = (conditionText, isDay) => {
     if (typeof conditionText === 'string') {
-      // Convert conditionText to lowercase for case-insensitive comparison
       const condition = conditionText.toLowerCase();
 
-      // Determine which icon to render based on condition text and time of day
       if (isDay) {
         switch (condition) {
           case "sunny":
@@ -67,7 +64,7 @@ function Weather() {
           default:
             return null;
         }
-      } else { // Night
+      } else {
         switch (condition) {
           case "clear":
             return <img src={ClearNight} alt="Clear Night" className="weather-icon" />;
@@ -90,7 +87,6 @@ function Weather() {
       return null;
     }
   };
-  // day or night based on local time
   const isDayTime = () => {
     const date = new Date();
     const hour = date.getHours();
