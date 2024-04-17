@@ -13,7 +13,7 @@ import RainNight from '../../weather/64x64/night/176.png';
 import SnowNight from '../../weather/64x64/night/179.png';
 import ThunderstormNight from '../../weather/64x64/night/200.png';
 
-const API_KEY = 'c5c652ad0f9d4f978bf223610241004';
+const API_KEY = 'd0b7abc2b79441ef8e993054241303';
 
 function Weather() {
   const [location, setLocation] = useState(localStorage.getItem('location') || 'Berlin');
